@@ -1,0 +1,35 @@
+{
+  "name": "planty-react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "local-web-server": "^3.0.4",
+    "lws-redirect": "^1.0.5",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "3.0.1"
+  },
+  "scripts": {
+    "serve": "ws --directory ./build --port 443 --compress --http2",
+    "serve-http": "ws --port 80 --stack redirect --redirect 'http -> https'",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
